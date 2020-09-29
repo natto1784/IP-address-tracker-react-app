@@ -1,7 +1,6 @@
 import React from 'react'
 import './Info.css'
 export default function Info(props) {
-  console.log(props.data)
   const data = props.data ? props.data : {}
   return (
     <div className='info'>
