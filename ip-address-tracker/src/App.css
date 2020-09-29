@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.app_header {
+  position: relative;
+  background: url(./images/pattern-bg.png);
+  background-size: cover;
+  min-width: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app_header h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 20px auto;
+}
+.app_header .search_bar {
+  padding: 0;
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.app_header .search_bar input {
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px 35px;
+  border-radius: 15px 0 0 15px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  width: 90%;
+}
+.app_header .search_bar button {
+  background-color: #2b2b2b;
+  font-size: 18px;
+  padding: 20px 35px;
+  padding-left: 25px;
+  outline: none;
+  border: none;
+  height: auto;
+  width: 10%;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  border-left: 3px solid white;
+  transition: 0.4s;
+}
+.app_header .search_bar button:hover {
+  background-color: white;
+  border-left: solid 3px black;
+}
+.app_header .search_bar button:hover path {
+  stroke: #2b2b2b;
+  transition: 0.4;
+}
+
+@media only screen and (max-width: 580px) {
+  .app_header .search_bar {
+    width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

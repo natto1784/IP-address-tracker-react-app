@@ -1,0 +1,89 @@
+.info {
+  display: flex;
+  background: white;
+  max-width: 80vw;
+  z-index: 1;
+  border-radius: 12px;
+  transform: translateY(50%);
+  box-shadow: 0 0 10px #969696;
+}
+.info .section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-right: 80px;
+  padding-bottom: 40px;
+  transition: 0.4s;
+}
+.info .section .title {
+  color: #969696;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-top: 40px;
+  text-align: center;
+}
+.info .section .value {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-top: 15px;
+  text-align: center;
+}
+.info .section .vr {
+  position: absolute;
+  left: -36px;
+  width: 1px;
+  height: 50%;
+  top: 25%;
+  background-color: #969696;
+}
+
+@media only screen and (max-width: 1375px) {
+  .info .section {
+    margin-right: 30px;
+  }
+  .info .section .value {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .info .section {
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+  .info .section .vr {
+    left: -16px;
+  }
+  .info .section .title {
+    font-size: 0.8em;
+  }
+  .info .section .value {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .info {
+    padding-top: 8px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+  .info .section {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    max-width: auto;
+    width: 80vw;
+  }
+  .info .section .title {
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  .info .section .value {
+    font-size: 1.2em;
+  }
+  .info .section .vr {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Info.css.map */
