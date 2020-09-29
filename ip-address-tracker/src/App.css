@@ -3,7 +3,8 @@
   font-family: "Rubik", sans-serif;
 }
 
-.app_header {
+.app .app_header {
+  height: 300px;
   position: relative;
   background: url(./images/pattern-bg.png);
   background-size: cover;
@@ -13,13 +14,13 @@
   flex-direction: column;
   align-items: center;
 }
-.app_header h1 {
+.app .app_header h1 {
   color: white;
   font-size: 28px;
   font-weight: 700;
-  margin: 20px auto;
+  margin: 30px auto;
 }
-.app_header .search_bar {
+.app .app_header .search_bar {
   padding: 0;
   position: relative;
   width: 500px;
@@ -27,7 +28,7 @@
   flex-direction: row;
   align-items: center;
 }
-.app_header .search_bar input {
+.app .app_header .search_bar input {
   display: inline-block;
   font-size: 18px;
   padding: 20px 35px;
@@ -37,7 +38,7 @@
   font-weight: 400;
   width: 90%;
 }
-.app_header .search_bar button {
+.app .app_header .search_bar button {
   background-color: #2b2b2b;
   font-size: 18px;
   padding: 20px 35px;
@@ -51,17 +52,23 @@
   border-left: 3px solid white;
   transition: 0.4s;
 }
-.app_header .search_bar button:hover {
+.app .app_header .search_bar button:hover {
   background-color: white;
   border-left: solid 3px black;
 }
-.app_header .search_bar button:hover path {
+.app .app_header .search_bar button:hover path {
   stroke: #2b2b2b;
   transition: 0.4;
 }
+.app .map {
+  height: calc(100vh - 300px);
+  width: 100vw;
+  min-height: 500px;
+  z-index: 0;
+}
 
 @media only screen and (max-width: 580px) {
-  .app_header .search_bar {
+  .app .app_header .search_bar {
     width: 90vw;
   }
 }

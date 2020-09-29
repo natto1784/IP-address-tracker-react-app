@@ -63,6 +63,7 @@
 }
 @media only screen and (max-width: 580px) {
   .info {
+    transform: translateY(10%);
     padding-top: 8px;
     padding-bottom: 30px;
     flex-direction: column;
@@ -72,13 +73,14 @@
     padding: 0;
     align-items: center;
     max-width: auto;
-    width: 80vw;
+    width: 70vw;
   }
   .info .section .title {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.8em;
   }
   .info .section .value {
+    margin-top: 10px;
     font-size: 1.2em;
   }
   .info .section .vr {

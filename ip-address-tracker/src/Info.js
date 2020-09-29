@@ -1,5 +1,6 @@
 import React from 'react'
 import './Info.css'
+
 export default function Info(props) {
   const data = props.data ? props.data : {}
   return (

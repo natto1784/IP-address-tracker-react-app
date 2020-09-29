@@ -8,7 +8,9 @@
 *{
    font-family:'Rubik',sans-serif;
 }
+.app{
 .app_header{
+   height:300px;
    position:relative;
    background:url(./images/pattern-bg.png);
    background-size:cover;
@@ -19,7 +21,7 @@
       color:white;
       font-size:28px;
       font-weight: 700;
-      margin:20px auto;
+      margin:30px auto;
    }
    .search_bar{
       padding:0;
@@ -59,9 +61,17 @@
       @include flexAlign(row);
    }
 }
+.map{
+   height:calc(100vh - 300px);
+   width:100vw;
+   min-height:500px;
+   z-index:0;
+}
+}
 @media only screen and (max-width:580px){
-   .app_header{
+   .app{
+      .app_header{
       .search_bar{
         width:90vw; 
    }
-}}
+}}}
