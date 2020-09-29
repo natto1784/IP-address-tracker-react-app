@@ -40,6 +40,10 @@ function App() {
             placeholder={width >= 492 ? "Search for any IP address or domain" : width >= 322 ? "Search IP/Domain" : "Search"}
             value={ip}
             onChange={(e) => setIp(e.target.value)}
+            onKeyPress={e => {
+              if (e.key === 'Enter')
+                fetchData(ip)
+            }}
           />
           <button tpye='submit' onClick={() => fetchData(ip)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#fff" strokeWidth="3" d="M2 1l6 6-6 6" /></svg>
